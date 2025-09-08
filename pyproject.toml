@@ -31,7 +31,7 @@ dependencies = [
   "triton>=2; (platform_machine=='x86_64' and sys_platform=='linux') or sys_platform=='linux2'",
 ]
 optional-dependencies.dev = [ "black", "flake8", "isort", "pytest", "scipy" ]
-urls = { Homepage = "https://github.com/openai/whisper" }
+urls = { Homepage = "https://github.com/SebastianJanampa/whisper" }
 scripts.whisper = "whisper.transcribe:cli"
 
 [tool.setuptools]
