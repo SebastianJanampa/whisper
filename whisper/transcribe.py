@@ -198,7 +198,7 @@ def transcribe(
                 kwargs.pop("best_of", None)
 
             options = DecodingOptions(**kwargs, temperature=t)
-            decode_result = model.decode(segment, options)
+            decode_result, confidences = model.decode(segment, options)
 
             needs_fallback = False
             if (
